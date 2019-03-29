@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+</head>
+<body>
+<input type="text" name="demo" id="demo">
+
+</body>
+<script type="text/javascript">
+$('#demo').daterangepicker({
+    "singleDatePicker": true,
+    "showDropdowns": true,
+    "timePicker": true,
+    "timePicker24Hour": true,
+    "autoApply": true,
+    "locale": {
+        "format": "MM/DD/YYYY H:mm:s",
+        
+        
+  
+    },
+    "linkedCalendars": false,
+    "showCustomRangeLabel": false,
+    "startDate": "02/27/2019",
+    "endDate": "03/05/2019"
+}, function(start, end, label) {
+  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+});
+</script>
+</html>

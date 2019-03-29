@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static  %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>{% block title %}Video Wall{% endblock %}</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css'%}">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css'%}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  {% block styles %}{% endblock %}
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to to the body tag
+to get the desired effect
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <!-- <a href="index3.html" class="nav-link">Home</a> -->
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <!-- <a href="#" class="nav-link">Contact</a> -->
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <!-- <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" name="pesquisa" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+ -->
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+   
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="{% static 'dist/img/AdminLTELogo.png'%}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Video Wall</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="{% static 'dist/img/user2-160x160.jpg'%}" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Usuário</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview menu-open">
+            <a href="{% url 'home' %}" class="nav-link {% block home %}{% endblock %}">
+              <i class="nav-icon fa fa-home"></i>
+              <p>
+                Home
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+
+           </li>
+
+
+          <li class="nav-item ">
+              <a href="{% url 'list_tabela' %}" class="nav-link ">
+                <i class="nav-icon fa fa-users"></i>
+                <p>Usuarios</p>
+              </a>
+          </li>
+
+
+          <li class="nav-item has-treeview {% block menu-open-p %}{% endblock %}">
+            <a href="#" class="nav-link {% block produtos %}{% endblock %}">
+              <i class="nav-icon fa fa-product-hunt"></i>
+              <p>
+                Produtos
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{% url 'produto_upload' %}" class="nav-link {% block produtos-inserir %}{% endblock %}" >
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Inserir</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'list_produtos' %}" class="nav-link {% block produtos-list %}{% endblock %}">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Lista Produtos</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item ">
+              <a href="{% url 'list_tv' %}" class="nav-link {% block tvs-list %}{% endblock %}">
+                <i class="nav-icon fa fa-tv"></i>
+                <p>Tvs</p>
+              </a>
+          </li>
+
+        <li class="nav-item has-treeview {% block menu-open-t %}{% endblock %}">
+        <a href="#" class="nav-link {% block telas %}{% endblock %}">
+          <i class="nav-icon fa fa-object-group"></i>
+          <p>
+            Telas
+            <i class="right fa fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="{% url 'inserir_tela' %}" class="nav-link {% block telas-inserir %}{% endblock %}" >
+              <i class="fa fa-circle-o nav-icon"></i>
+              <p>Inserir</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'list_tela' %}" class="nav-link {% block telas-list %}{% endblock %}">
+              <i class="fa fa-circle-o nav-icon"></i>
+              <p>Lista Telas</p>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+        <li class="nav-item has-treeview {% block menu-open-of %}{% endblock %}">
+        <a href="#" class="nav-link {% block oferta %}{% endblock %}">
+          <i class="nav-icon fa fa-certificate"></i>
+          <p>
+            Ofertas
+            <i class="right fa fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="{% url 'inserir_oferta' %}" class="nav-link {% block oferta-inserir %}{% endblock %}" >
+              <i class="fa fa-circle-o nav-icon"></i>
+              <p>Inserir</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'list_oferta' %}" class="nav-link {% block oferta-list %}{% endblock %}">
+              <i class="fa fa-circle-o nav-icon"></i>
+              <p>Lista Ofertas</p>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+
+
+
+
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+   <!-- Conteúdo do site -->
+        {% block conteudo %}{% endblock %}
+
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-block-down">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2019 Paulo & Ezequiel.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="{% static 'plugins/jquery/jquery.min.js'%}"></script>
+<!-- Bootstrap -->
+<script src="{% static 'plugins/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+<!-- AdminLTE -->
+<script src="{% static 'dist/js/adminlte.js'%}"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="{% static 'plugins/chart.js/Chart.min.js'%}"></script>
+<script src="{% static 'dist/js/demo.js'%}"></script>
+<script src="{% static 'dist/js/pages/dashboard3.js'%}"></script>
+
+
+
+ {% block scripts %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+{% extends "base-principal.html" %}
+
+{% block title %}Lista de Oferta{% endblock %}
+
+{% block oferta-list %}active{% endblock %}
+{% block oferta %}active{% endblock %}
+{% block menu-open-of %}menu-open{% endblock %}
+{% load moeda %}
+{% load static  %}
+{% block conteudo %}
+{% block styles %}
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="{% static 'plugins/daterangepicker2/css/daterangepicker.css' %}">
+{% endblock %}
+
+  <!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Ofertas</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+
+
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12">
+              <div class="card ">
+                <div class="card-header no-border">
+                  <h3 class="card-title">Pesqusisa</h3>
+                </div>
+                <form method="get"  role="form">
+                <div class="card-body">
+
+                  {% if messages %}
+                     {% for message in  messages %}
+                          <div {% if message.tags %} class="alert alert-{{ message.tags }} alert-dismissable" {% endif %} role="alert">
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                              {{ message }}
+                          </div>
+                     {% endfor %}
+                  {% endif %}
+
+                  <div class="form-row">
+                    <div class="form-group col-md-1">
+                      <label for="codigo">Código</label>
+                      <input type="text" class="form-control"  id="codigo" name="codigo" placeholder="Código" >
+                    </div>
+
+                    <div class="form-group col-md-3">
+                      <label for="oferta-nome">Nome</label>
+                      <input type="text" class="form-control" id="oferta-nome" value="{{data}}" name="nome" placeholder="Insira Um nome">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                      <label for="oferta-datainicio">Data e Hora Inicio</label>
+                      <input type="text" class="form-control datetime" id="oferta-datainicio"  name="data-inicio" placeholder="Insira Um data">
+                    </div>
+
+                      <div class="form-group col-md-4">
+                      <label for="oferta-datafim">Data e Hora Fim</label>
+                      <input type="text" class="form-control datetime" id="oferta-datafim" name="data-fim" placeholder="Insira Um data">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="card-footer">
+                 <button type="submit" class="btn btn-primary">Pesquisar</button>
+                </div>
+                </form>
+
+              </div>
+              <!-- /.card -->
+          </div>
+          <!-- /.col-md-12 -->
+
+          <div class="col-lg-12">
+            <div class="card card-primary">
+              <div class="card-header no-border">
+                <h3 class="card-title">Lista de Ofertas</h3>
+              </div>
+
+              <div class="card-body p-0">
+
+                <table class="table table-striped table-valign-middle">
+                  <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Data Inicio</th>
+                    <th>Data Fim</th>
+                    <th>Opção</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  {% for oferta in ofertas %}
+                  <tr>
+
+                    <td>{{ oferta.codigo }}</td>
+                    <td>{{ oferta.nome|upper }}</td>
+                    <td>{{ oferta.datainicio|date:'d/m/Y H:m' }}</td>
+                    <td>{{ oferta.datafim|date:'d/m/Y H:m' }}</td>
+                    <td >
+                      <a href="{% url 'editar-oferta' oferta.idOferta %}" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+
+                      <button class="btn btn-danger confirma-excluir" id="oferta-{{oferta.idOferta}}-{{oferta.nome}}"><i class="fa fa-trash"></i></button>
+                    </td>
+
+                  </tr>
+                  {% endfor %}
+
+
+                  </tbody>
+
+                </table>
+              </div>
+              <div class="card-footer ">
+
+                {% with ofertas as paginacao %}
+                   {% include "paginacao.html" %}
+                {% endwith %}
+
+              </div>
+
+            </div>
+
+            <!-- /.card -->
+          </div>
+          <!-- /.col-md-12 -->
+
+
+
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+{% include "ofertas/confirma-delete-oferta.html" %}
+
+
+{% endblock %}
+
+{% block scripts %}
+  <script src="{% static 'dist/js/pages/produtos/editar.js' %}"></script>
+  <!-- date-range-picker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+   <script src="{% static 'plugins/daterangepicker2/js/daterangepicker.min.js' %}"></script>
+  <script type="text/javascript">
+  $(function() {
+
+  $('.datetime').daterangepicker({
+      autoUpdateInput: false,
+      "singleDatePicker": true,
+       "locale": {
+        "format": "DD/MM/YYYY",
+          "applyLabel": "Aplicar",
+
+
+
+    },
+
+  });
+
+  $('.datetime').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('DD/MM/YYYY') );
+  });
+
+
+
+});
+
+  </script>
+ <script src="{% static 'dist/js/pages/ofertas/confirma_excluir.js' %}"></script>
+{% endblock %}
+

@@ -1,0 +1,15 @@
+{% if messages %}
+    {% for message in messages %}
+        <div {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+            <strong>{{ message|safe }}</strong>
+        </div>
+    {% endfor %}
+{% else %}
+    {{order}}
+        <form method="post" enctype="multipart/form-data">{% csrf_token %}
+            <label>Selecione o arquivo</label>
+            <input type="file" name="file">
+            <p>Selecione um arquivo TXT</p>
+            <button type="save">Salvar</button>
+        </form>
+{% endif %}

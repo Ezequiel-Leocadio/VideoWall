@@ -1,0 +1,75 @@
+ <div class="card">
+    <div class="card-body p-0">
+        <div class="row col-md-12">
+            <div class="col-md-6">
+        <table class="table table-striped table-valign-middle ">
+              <thead>
+                  <tr>
+                    <th>{{tela.nome|upper}}</th>
+                    <th></th>
+
+
+                  </tr>
+              </thead>
+              <tbody>
+                  {% for item in itens_tabela %}
+
+                      <tr>
+                            <td>
+                              {{ item.produto.descricaoexibicao}}
+                                &nbsp;
+                                {%if item.produto.tipoproduto == 0%}
+                                KL
+                                {%else%}
+                                UN
+                                {%endif%}
+                            </td>
+                            <td class="preco">R$ {{item.produto.valor}}</td>
+
+
+                      </tr>
+
+                  {% endfor %}
+
+
+              </tbody>
+
+
+    </table>
+
+        </div>
+             <div class="col-md-6">
+        <table class="table table-striped table-valign-middle ">
+              <thead>
+                  <tr>
+                    <th>{{tela.nome|upper}}</th>
+                    <th></th>
+
+
+                  </tr>
+              </thead>
+              <tbody>
+                  {% for item in itens_tabela %}
+
+                      <tr>
+                            <td>
+                              {{ item.produto.descricaoexibicao}}
+                            </td>
+                            <td class="preco">R$ {{item.produto.valor}}</td>
+
+
+                      </tr>
+
+                  {% endfor %}
+
+
+              </tbody>
+
+
+    </table>
+
+        </div>
+        </div>
+    </div>
+</div>
+<!-- /.card -->

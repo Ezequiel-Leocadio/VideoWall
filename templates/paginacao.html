@@ -1,0 +1,17 @@
+<div class="pagination justify-content-center">
+    <span class="step-links">
+        {% if paginacao.has_previous %}
+            <a href="?page=1" class="btn btn-default">&laquo; Primeira</a>
+            <a href="?page={{ paginacao.previous_page_number }}" class="btn btn-default">Anterior</a>
+        {% endif %}
+
+        <span class="current">
+            Página {{ paginacao.number }} de {{ paginacao.paginator.num_pages }}.
+        </span>
+
+        {% if paginacao.has_next %}
+            <a href="?page={{ paginacao.next_page_number }}" class="btn btn-default">Próxima</a>
+            <a href="?page={{ paginacao.paginator.num_pages }}" class="btn btn-default">Ultima &raquo;</a>
+        {% endif %}
+    </span>
+</div>

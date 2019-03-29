@@ -1,0 +1,58 @@
+        <!-- Modal -->
+        <div class="modal fade" id="editarProduto" tabindex="-1" role="dialog" aria-labelledby="editEventLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form action="{% url 'editar' %}" method="post" enctype="multipart/form-data">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editEventLabel">Editar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            {% csrf_token %}
+                            <input type="hidden" id="editarProdutoId" name="idProduto" value="">
+                            <div class="form-group">
+                                <label for="editarprodutoCodigo">Código</label>
+                                <input type="text" class="form-control" id="editarprodutoCodigo" name="codigo"  >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="editarProdutoDescricao">Descrição</label>
+                                <input type="text" class="form-control" id="editarProdutoDescricao" name="descricaoexibicao"  >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="editarProdutoValor">Valor</label>
+                                <input type="text" class="form-control" id="editarProdutoValor" name="valor"  >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="editarProdutoTipo">Tipo</label>
+                                <select class="form-control" id="editarProdutoTipo" name="tipoproduto">
+                                <option value="">Selecione</option>
+                                    <option value="0">KL</option>
+                                    <option value="1">UN</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="editarProdutoTipo">Imagem</label>
+                                <input type="file" name="imagem">
+
+
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Editar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+<!--
+    vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
+-->

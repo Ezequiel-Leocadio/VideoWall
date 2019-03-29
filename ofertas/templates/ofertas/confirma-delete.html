@@ -1,0 +1,7 @@
+<h2>Tem certeza que quer deletar: {{ item_oferta }}?</h2>
+
+
+<form action="{% url 'delete-item-oferta' item_oferta.idIntensOferta %}" method="POST">
+    {% csrf_token %}
+    <button type="submit">Confirmar</button>
+</form>

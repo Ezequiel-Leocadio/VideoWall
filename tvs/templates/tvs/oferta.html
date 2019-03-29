@@ -1,0 +1,42 @@
+{% load static  %}
+<div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Ofertas </h3>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+             <section id="demods">
+          <div class="row">
+            <div class="large-12 columns">
+
+              <div class="owl-carousel">
+
+                  {%for item in itensoferta%}
+                   <div class="item " style="height:400px;    padding: 0; ">
+                    <div class="product is-gray">
+                      <div class="image d-flex align-items-center justify-content-center">
+                        <div class="ribbon ribbon-danger text-uppercase">Oferta</div>
+                        <img src="{{ MEDIA_URL }}{{ item.produto.imagem.url }}" alt="{{item.produto.imagem }}" alt="product" class="img-fluid">
+
+                      </div>
+                      <div class="title text-center"><small class="text-muted ">{{item.produto.descricaoexibicao}}</small>
+
+                     </div>
+                        <div  class="price text-muted text-center">R${{item.produto.valor}}</div>
+                    </div>
+                  </div>
+                  {%endfor%}
+
+
+
+
+              </div>
+            </div>
+          </div>
+             </section>
+
+
+      </div>
+      <!-- /.card-body -->
+</div>
+<!-- /.card -->

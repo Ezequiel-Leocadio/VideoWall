@@ -1,0 +1,8 @@
+ <video autobuffer autoplay="true" fullscreen="true">
+    {% if tela.video %}
+        <source src="{{ MEDIA_URL }}{{ tela.video.url }}" type='video/mp4'>
+
+    Your browser does not support the video tag.
+    {% endif %}
+
+</video>

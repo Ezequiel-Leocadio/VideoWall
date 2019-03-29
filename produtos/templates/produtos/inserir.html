@@ -1,0 +1,87 @@
+{% extends "base-principal.html" %}
+
+{% block title %}Lista de Funcionários{% endblock %}
+
+{% block menu-open-p %}menu-open{% endblock %}
+{% block produtos %}active{% endblock %}
+{% block produtos-inserir %}active{% endblock %}
+
+{% block conteudo %}
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Produtos</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+
+
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-12">
+
+            <div class="card ">
+              <div class="card-header no-border">
+                <h3 class="card-title">Upload de Produtos</h3>
+
+              </div>
+                {% if messages %}
+                   {% for message in  messages %}
+                        <div {% if message.tags %} class="alert alert-{{ message.tags }} alert-dismissable" {% endif %} role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            {{ message }}
+                        </div>
+                   {% endfor %}
+                {% endif %}
+              <form method="post" enctype="multipart/form-data" role="form">
+              <div class="card-body">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label for="file">Selecione o Arquivo TXT</label>
+
+                    <div class="input-group">
+                        <input type="file" class="form-control" id="file" name="file" >
+                    </div>
+
+                </div>
+
+              </div>
+              <div class="card-footer">
+
+               <button type="save" class="btn btn-primary" onClick="this.disabled=true; this.innerText='Aguarde…'; this.form.submit();"
+>Salvar</button>
+               </form>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col-md-12 -->
+          <div class="col-lg-12">
+
+          </div>
+          <!-- /.col-md-12 -->
+
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+{% endblock %}
