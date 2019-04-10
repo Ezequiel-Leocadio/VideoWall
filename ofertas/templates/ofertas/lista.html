@@ -56,25 +56,37 @@
                   {% endif %}
 
                   <div class="form-row">
-                    <div class="form-group col-md-1">
+                   <!--  <div class="form-group col-md-1">
                       <label for="codigo">Código</label>
                       <input type="text" class="form-control"  id="codigo" name="codigo" placeholder="Código" >
                     </div>
 
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-2">
                       <label for="oferta-nome">Nome</label>
                       <input type="text" class="form-control" id="oferta-nome" value="{{data}}" name="nome" placeholder="Insira Um nome">
                     </div>
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                       <label for="oferta-datainicio">Data e Hora Inicio</label>
                       <input type="text" class="form-control datetime" id="oferta-datainicio"  name="data-inicio" placeholder="Insira Um data">
                     </div>
 
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-md-3">
                       <label for="oferta-datafim">Data e Hora Fim</label>
                       <input type="text" class="form-control datetime" id="oferta-datafim" name="data-fim" placeholder="Insira Um data">
                     </div>
+ -->
+
+                  <div class="form-group col-md-3">
+                    <label for="tv">Tvs</label>
+                    <select class="form-control"   id="tv" name="tv">
+                        <option value="">Selecione</option>
+                        {% for tv in tvs %}
+                            <option value="{{tv.idTv}}">{{tv.nome}}</option>
+                        {% endfor %}
+
+                      </select>
+                  </div>
                   </div>
 
                 </div>
@@ -104,21 +116,23 @@
                     <th>Nome</th>
                     <th>Data Inicio</th>
                     <th>Data Fim</th>
+                    <th>TV</th>
                     <th>Opção</th>
                   </tr>
                   </thead>
                   <tbody>
-                  {% for oferta in ofertas %}
+                  {% for tela in telas %}
                   <tr>
 
-                    <td>{{ oferta.codigo }}</td>
-                    <td>{{ oferta.nome|upper }}</td>
-                    <td>{{ oferta.datainicio|date:'d/m/Y H:m' }}</td>
-                    <td>{{ oferta.datafim|date:'d/m/Y H:m' }}</td>
+                    <td>{{ tela.oferta.codigo }}</td>
+                    <td>{{ tela.oferta.nome|upper }}</td>
+                    <td>{{ tela.oferta.datainicio|date:'d/m/Y H:m' }}</td>
+                    <td>{{ tela.oferta.datafim|date:'d/m/Y H:m' }}</td>
+                    <td>{{ tela.tv }}</td>
                     <td >
-                      <a href="{% url 'editar-oferta' oferta.idOferta %}" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+                      <a href="{% url 'editar-oferta' tela.oferta.idOferta %}" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
 
-                      <button class="btn btn-danger confirma-excluir" id="oferta-{{oferta.idOferta}}-{{oferta.nome}}"><i class="fa fa-trash"></i></button>
+                      <button class="btn btn-danger confirma-excluir" id="oferta-{{tela.oferta.idOferta}}-{{tela.oferta.nome}}"><i class="fa fa-trash"></i></button>
                     </td>
 
                   </tr>

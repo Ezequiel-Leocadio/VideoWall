@@ -13,3 +13,6 @@ class ProdutoImagemForm(forms.ModelForm):
     class Meta:
         model = Produto
         fields = ["imagem"]
+        widgets = {
+            'imagem': ClearableFileInput(attrs={'multiple': True}),
+        }

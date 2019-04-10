@@ -146,7 +146,7 @@ to get the desired effect
         <a href="#" class="nav-link {% block telas %}{% endblock %}">
           <i class="nav-icon fa fa-object-group"></i>
           <p>
-            Telas
+            Tabelas
             <i class="right fa fa-angle-left"></i>
           </p>
         </a>
@@ -160,7 +160,32 @@ to get the desired effect
           <li class="nav-item">
             <a href="{% url 'list_tela' %}" class="nav-link {% block telas-list %}{% endblock %}">
               <i class="fa fa-circle-o nav-icon"></i>
-              <p>Lista Telas</p>
+              <p>Lista Tabelas</p>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+            <li class="nav-item has-treeview {% block menu-open-v %}{% endblock %}">
+        <a href="#" class="nav-link {% block videos %}{% endblock %}">
+          <i class="nav-icon fa fa-play"></i>
+          <p>
+            Videos
+            <i class="right fa fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="{% url 'inserir_video' %}" class="nav-link {% block videos-inserir %}{% endblock %}" >
+              <i class="fa fa-circle-o nav-icon"></i>
+              <p>Inserir</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'list_video' %}" class="nav-link {% block videos-list %}{% endblock %}">
+              <i class="fa fa-circle-o nav-icon"></i>
+              <p>Lista Videos</p>
             </a>
           </li>
 

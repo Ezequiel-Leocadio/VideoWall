@@ -23,9 +23,9 @@ def list_produtos(request):
             tipoproduto__contains=tipo,
             descricaoexibicao__contains=descricaoex,
             descricaoimportcao__contains=descricaoim,
-        )
+        ).order_by('descricaoimportcao')
     else:
-        produtos_list = Produto.objects.all()
+        produtos_list = Produto.objects.all().order_by('descricaoimportcao')
 
     paginator = Paginator(produtos_list, 10)  # Lista 25  por pagina
 

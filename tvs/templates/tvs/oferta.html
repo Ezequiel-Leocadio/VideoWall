@@ -1,4 +1,5 @@
 {% load static  %}
+{% load teste %}
 <div class="card">
       <div class="card-header">
         <h3 class="card-title">Ofertas </h3>
@@ -12,17 +13,21 @@
               <div class="owl-carousel">
 
                   {%for item in itensoferta%}
-                   <div class="item " style="height:400px;    padding: 0; ">
+                   <div class="item " style="height:100%;    padding: 0; ">
                     <div class="product is-gray">
                       <div class="image d-flex align-items-center justify-content-center">
                         <div class="ribbon ribbon-danger text-uppercase">Oferta</div>
                         <img src="{{ MEDIA_URL }}{{ item.produto.imagem.url }}" alt="{{item.produto.imagem }}" alt="product" class="img-fluid">
 
                       </div>
-                      <div class="title text-center"><small class="text-muted ">{{item.produto.descricaoexibicao}}</small>
+                      <div class="title text-center"><small class=" descricao_oferta" id="descricao_oferta">{{item.produto.descricaoexibicao}}</small>
 
                      </div>
-                        <div  class="price text-muted text-center">R${{item.produto.valor}}</div>
+                        <div  class="price text-muted text-center">
+                          <span class="preco_oferta" id="sigla_preco">R$</span>
+                          <span class="preco_oferta" id="reais_preco">{{item.produto.valor|stringformat:"s"|teste|first}},</span>
+                          <span class="preco_oferta" id="centavos_preco">{{item.produto.valor|stringformat:"s"|teste|last  }}</span>
+                        </div>
                     </div>
                   </div>
                   {%endfor%}

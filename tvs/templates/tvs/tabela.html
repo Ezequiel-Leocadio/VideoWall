@@ -14,6 +14,9 @@
               <tbody>
                   {% for item in itens_tabela %}
 
+                     {%if item.ordem|divisibleby:2 %}
+
+
                       <tr>
                             <td>
                               {{ item.produto.descricaoexibicao}}
@@ -24,10 +27,12 @@
                                 UN
                                 {%endif%}
                             </td>
-                            <td class="preco">R$ {{item.produto.valor}}</td>
+                            <td class="preco">{{item.ordem}}R$ {{item.produto.valor}}</td>
 
 
                       </tr>
+
+                  {%endif%}
 
                   {% endfor %}
 
@@ -50,16 +55,18 @@
               </thead>
               <tbody>
                   {% for item in itens_tabela %}
+                    {%if item.ordem|divisibleby:2 %}
+                      {% else %}
 
                       <tr>
                             <td>
                               {{ item.produto.descricaoexibicao}}
                             </td>
-                            <td class="preco">R$ {{item.produto.valor}}</td>
+                            <td class="preco">{{item.ordem}}R$ {{item.produto.valor}}</td>
 
 
                       </tr>
-
+                    {%endif%}
                   {% endfor %}
 
 

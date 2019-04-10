@@ -22,6 +22,7 @@ class IntensOferta(models.Model):
     idIntensOferta = models.AutoField(primary_key=True)
     produto = models.ForeignKey(Produto, on_delete=models.CASCADE)
     oferta = models.ForeignKey(Oferta, on_delete=models.CASCADE)
+    ordem = models.CharField(max_length=10)
 
 
     def __str__(self):

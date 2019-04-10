@@ -20,4 +20,4 @@ class Produto(models.Model):
 
 
     def __str__(self):
-        return self.descricaoexibicao
+        return str(self.codigo)+str(' -- '+self.descricaoexibicao)

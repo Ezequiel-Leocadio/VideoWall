@@ -87,7 +87,8 @@ img {
 }
 
 .product .image img {
-    max-width: 170px;
+
+  /* max-width: 170px; */
 }
 
 .product .image .ribbon, .product .image .ribbon-primary, .product .image .ribbon-warning, .product .image .ribbon-danger, .product .image .ribbon-info, .product .image .ribbon-success {
@@ -155,4 +156,25 @@ img {
 .select2-container--default .select2-selection--single {
 
     height: 38px !important;
+}
+
+#descricao_oferta{
+    color: #f58634 !important;
+        font-size: xx-large;
+}
+
+.preco_oferta{
+     color: #d8090f !important;
+     font-family: fantasy;
+}
+
+#sigla_preco{
+    font-size: 44%;
+}
+
+#centavos_preco{
+    font-size: 72%;
+        position: relative;
+    left: -4%;
+    top: -14px;
 }

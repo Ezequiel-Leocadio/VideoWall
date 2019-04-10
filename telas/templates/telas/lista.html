@@ -102,7 +102,7 @@
 
             <div class="card card-primary">
               <div class="card-header no-border">
-                <h3 class="card-title">Lista de Telas</h3>
+                <h3 class="card-title">Lista de Tabela</h3>
 
               </div>
 
@@ -114,7 +114,6 @@
                     <th>Nome</th>
                     <th>TV</th>
                     <th>Tempo</th>
-                    <th>Tipo</th>
                     <th>Opção</th>
                   </tr>
                   </thead>
@@ -125,7 +124,6 @@
                     <td>{{ tela.nome }}</td>
                     <td>{{tela.tv.nome}}</td>
                     <td>{{ tela.tempoexibicao }}</td>
-                    <td>{{ tela.tipo }}</td>
                     <td >
                       <a class="btn btn-info"  href="{% url 'editar-tela' tela.idTela %}"><i class="fa fa-pencil"></i></a>
 

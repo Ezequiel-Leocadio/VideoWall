@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static  %}
+{% load teste %}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,17 +72,19 @@ body{
 
 
 
-                {% if tela.tipo ==  'tabela'%}
+                {% if tela.tipo ==  '1tabela'%}
                      {%with itens=tela.intenstela_set.all  %}
                         {% include "tvs/tabela.html" %}
                     {%endwith%}
                 {%else%}
-                    {%if tela.tipo == 'oferta'%}
+                    {%if tela.tipo == '2oferta'%}
+
                         {%with itensoferta=tela.oferta.intensoferta_set.all%}
                             {% include "tvs/oferta.html" %}
                         {%endwith%}
+
                     {%else%}
-                        {%if tela.tipo == 'video'%}
+                        {%if tela.tipo == '3video'%}
                           {% include "tvs/video.html" %}
                         {% endif%}
                     {% endif%}
@@ -137,9 +140,6 @@ body{
  <script>
     $(document).ready(function() {
 
-
-
-
              $(function() {
               var tempo = 2;
               let values = $('#tempo').val().split(':');
@@ -148,6 +148,7 @@ body{
               var tv = {{tv_tv}};
               var total_page = {{total_page}};
               var pagina_next = parseInt(pagina) + parseInt(1)
+
               if (pagina_next > total_page){
                 pagina_next = 1;
               }
@@ -165,29 +166,24 @@ body{
 
           var owl = $('.owl-carousel');
           var itemofeta;
+
           if ({{totl_item_oferta}} < 3){
             itemoferta = {{totl_item_oferta}};
           }else{
             itemoferta = 3;
           }
+
           owl.owlCarousel({
             items: itemoferta,
             slideBy: itemoferta,
             autoHeight:true,
-
             loop: true,
             margin: 10,
-           stagePadding: 0,
-            autoplay: false,
-            autoplayTimeout: 1000,
-
-
+            stagePadding: 0,
+            autoplay: true,
+            autoplayTimeout: 5000,
           });
-          function telacheia(){
-          document.requestFullscreen();
-          }
 
-          telacheia();
     })
  </script>
 
