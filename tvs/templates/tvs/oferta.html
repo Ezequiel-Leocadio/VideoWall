@@ -2,46 +2,55 @@
 {% load teste %}
 <div class="card">
       <div class="card-header">
-        <h3 class="card-title">Ofertas </h3>
+        <h3 class="card-title">Ofertas</h3>
       </div>
       <!-- /.card-header -->
       <div class="card-body">
              <section id="demods">
           <div class="row">
             <div class="large-12 columns">
+                {% if totl_item_oferta == 2%}
+                    <div class="owl-carousel col-md-8 text-center"  style="margin:auto;">
+                {%else%}
+                {%if totl_item_oferta == 1%}
+                         <div class="owl-carousel col-md-4 text-center"  style="margin:auto;">
+                {%else%}
+                        <div class="owl-carousel" >
+                {%endif%}
+                {%endif%}
 
-              <div class="owl-carousel">
-
-                  {%for item in itensoferta%}
-                   <div class="item " style="height:100%;    padding: 0; ">
-                    <div class="product is-gray">
-                      <div class="image d-flex align-items-center justify-content-center">
-                        <div class="ribbon ribbon-danger text-uppercase">Oferta</div>
+              {%for item in itensoferta%}
+               <div class="item " style="height:100%;    padding: 0; ">
+                <div class="product is-gray">
+                  <div class="image d-flex align-items-center justify-content-center">
+                    <div class="ribbon ribbon-danger text-uppercase">Oferta</div>
+                      {%if item.produto.imagem%}
                         <img src="{{ MEDIA_URL }}{{ item.produto.imagem.url }}" alt="{{item.produto.imagem }}" alt="product" class="img-fluid">
-
-                      </div>
-                      <div class="title text-center"><small class=" descricao_oferta" id="descricao_oferta">{{item.produto.descricaoexibicao}}</small>
-
-                     </div>
-                        <div  class="price text-muted text-center">
-                          <span class="preco_oferta" id="sigla_preco">R$</span>
-                          <span class="preco_oferta" id="reais_preco">{{item.produto.valor|stringformat:"s"|teste|first}},</span>
-                          <span class="preco_oferta" id="centavos_preco">{{item.produto.valor|stringformat:"s"|teste|last  }}</span>
-                        </div>
-                    </div>
+                      {%else%}
+                      <img src="{%static 'dist/img/sem_imagem.png'%}" alt="sem_imagem" alt="product" class="img-fluid">
+                      {%endif%}
                   </div>
-                  {%endfor%}
+                  <div class="title text-center"><small class=" descricao_oferta" id="descricao_oferta">{{item.produto.descricaoexibicao}}</small>
 
-
-
+                 </div>
+                    <div  class="price text-muted text-center">
+                      <span class="preco_oferta" id="sigla_preco">R$</span>
+                      <span class="preco_oferta" id="reais_preco">{{item.produto.valor|stringformat:"s"|teste|first}},</span>
+                      <span class="preco_oferta" id="centavos_preco">{{item.produto.valor|stringformat:"s"|teste|last  }}</span>
+                    </div>
+                </div>
+              </div>
+              {%endfor%}
 
               </div>
             </div>
           </div>
-             </section>
 
+             </section>
+<div>Desenvolvido por STARK Sistemas!.</div>
 
       </div>
       <!-- /.card-body -->
+
 </div>
 <!-- /.card -->

@@ -8,6 +8,10 @@ class ProdutoForm(forms.ModelForm):
         model = Produto
         fields = ["codigo","valor", "tipoproduto","descricaoexibicao", "imagem"]
 
+class ProdutoUpload(forms.ModelForm):
+    class Meta:
+        model = Produto
+        fields = ['imagem']
 
 class ProdutoImagemForm(forms.ModelForm):
     class Meta:

@@ -1,30 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html" line="138" mnemonic="5" />
+    <bookmark url="file://$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html" line="125" mnemonic="5" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="136b2a24-7113-455e-9eee-a15e66382981" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ofertas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ofertas/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_06rwrsp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_1cfDK4V.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_3iDJVS3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_5BJ7q30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_8I20jQ2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_9EOUW6B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_AM2Apgy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_CXnZBmx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_EJtRmuq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_I3b7Ye9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_IWF6llu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_LcvYLK8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_LtP9A2w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_N5oqOQC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_PSdy0ue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_UwAguJN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_bE7msz8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_cPKICqF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_e0toJXl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_hTKl2Mp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_lCV6KCi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_mXryTO2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_o5shn4h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_pZrBd94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_tsM373L.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/24712--ingredient_detail_ingredient-2_yCqxx4P.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/AdminLTELogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/AdminLTELogo_4nrLLOJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/AdminLTELogo_Ou2iuS1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Django_2_-_CRUD_completo_em_30_minutos__2018_.mp4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_1a4M6Wb.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_2hdVJlj.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_595EtHL.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_8pmxT3r.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_A5RvTtk.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_Eqbhi1w.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_Fg8FKmH.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_FrPhxAt.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_G5inDfw.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_NWBffWe.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_QBC1Pu8.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_XkHfY9o.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_ZSBFOA4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_Zlph1IX.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_aSqIUtG.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_anBQcIf.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_nnqzfpy.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_s2uLpJm.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_vWb5lNi.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/Mortadela-Defumara-Aurora-200g_wiXyGaD.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/avatar04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/avatar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/avatar5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/avatar5_d0EWErs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/avatar_QnIGSwB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/big_55ZcpuS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/big_YwRc0Is.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/big_aiGxc9N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/capa-secundario-origem-segura-800x445.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/capa-secundario-origem-segura-800x445_4Xw5eEv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/capa-secundario-origem-segura-800x445_5ngQuBQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/capa-secundario-origem-segura-800x445_OmZIgom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/capa-secundario-origem-segura-800x445_Q6BIPGb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/capa-secundario-origem-segura-800x445_Upjx5WH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/carne1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/cartao_100.73.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_0rfMuw1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_2y4lrgN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_351VXqi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_3qbqRWS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_4J1DDmS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_6K4C18T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_9tUE6Eo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_A4isT3K.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_BGpUlr7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_K8zPyRv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_NYoahHI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_Ohs0BvI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_P1NGx6M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_TAKXzLv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_US5NMYc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_Ul498pf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_exRLM2H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_fJ061Jt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_fmkKXsM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_kySjF97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_pTJingn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_pTQ1KzN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_pdKDu3M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_qsfv1MR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_rq4gzkq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_tHVFmPH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_tc15qv6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_xEOGgUL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_xZzo4S2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_xsdz4yb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/peito-de-frango-png-1_xwueo6I.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/photo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/produtos/photo1_tIyQ5PE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/videos/Django_2_-_CRUD_completo_em_30_minutos__2018__gLPnlhe.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ofertas/templates/ofertas/inserir.html" beforeDir="false" afterPath="$PROJECT_DIR$/ofertas/templates/ofertas/inserir.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ofertas/templates/ofertas/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/ofertas/templates/ofertas/lista.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ofertas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ofertas/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ofertas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ofertas/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produtos/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produtos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produtos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projeto/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projeto/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/statics/assets/css/tabela.css" beforeDir="false" afterPath="$PROJECT_DIR$/statics/assets/css/tabela.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/statics/plugins/jQueryUI/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/statics/plugins/jQueryUI/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statics/dist/img/boxed-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/telas/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/telas/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telas/templates/telas/inserir.html" beforeDir="false" afterPath="$PROJECT_DIR$/telas/templates/telas/inserir.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telas/templates/telas/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/telas/templates/telas/lista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telas/templates/videos/inserir.html" beforeDir="false" afterPath="$PROJECT_DIR$/telas/templates/videos/inserir.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/telas/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/telas/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base-principal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html" beforeDir="false" afterPath="$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tvs/templates/tvs/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/tvs/templates/tvs/lista.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tvs/templates/tvs/oferta.html" beforeDir="false" afterPath="$PROJECT_DIR$/tvs/templates/tvs/oferta.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tvs/templates/tvs/tabela.html" beforeDir="false" afterPath="$PROJECT_DIR$/tvs/templates/tvs/tabela.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tvs/templates/tvs/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/tvs/templates/tvs/video.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tvs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tvs/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,39 +141,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/telas/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="245" selection-start-line="245" selection-end-line="260" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/inserir.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
-              <folding>
-                <element signature="e#4395#4413#0" expanded="true" />
-                <element signature="e#4999#5017#0" expanded="true" />
-                <element signature="e#5564#5582#0" expanded="true" />
-                <element signature="e#6129#6147#0" expanded="true" />
-                <element signature="e#6694#6712#0" expanded="true" />
-                <element signature="e#7259#7277#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ofertas/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="295" column="8" selection-start-line="295" selection-start-column="8" selection-end-line="295" selection-end-column="8" />
+            <state relative-caret-position="4726">
+              <caret line="295" column="54" selection-start-line="295" selection-start-column="54" selection-end-line="295" selection-end-column="63" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -77,49 +153,74 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/telas/urls.py">
+        <entry file="file://$PROJECT_DIR$/produtos/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="221">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/produtos/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base-principal.html">
+        <entry file="file://$PROJECT_DIR$/tvs/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="185" column="39" selection-start-line="185" selection-start-column="39" selection-end-line="185" selection-end-column="39" />
+            <state relative-caret-position="833">
+              <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/telas/templates/videos/lista.html">
+        <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="67" column="24" lean-forward="true" selection-start-line="57" selection-end-line="67" selection-end-column="24" />
+            <state relative-caret-position="1496">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/lista.html">
+        <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/oferta.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+            <state relative-caret-position="833">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/telas/templates/videos/inserir.html">
+        <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/tabela.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+            <state relative-caret-position="1360">
+              <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/telas/templates/telas/inserir.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2023">
+              <caret line="119" column="132" selection-start-line="119" selection-start-column="132" selection-end-line="119" selection-end-column="132" />
             </state>
           </provider>
         </entry>
@@ -149,57 +250,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/intensofertas/urls.py" />
-        <option value="$PROJECT_DIR$/intensofertas/views.py" />
-        <option value="$PROJECT_DIR$/templates/paginacao.html" />
         <option value="$PROJECT_DIR$/statics/dist/js/pages/produtos/editar.js" />
         <option value="$PROJECT_DIR$/produtos/templatetags/moeda.py" />
         <option value="$PROJECT_DIR$/tvs/urls.py" />
-        <option value="$PROJECT_DIR$/projeto/urls.py" />
         <option value="$PROJECT_DIR$/ofertas/templates/ofertas/confirma-delete.html" />
         <option value="$PROJECT_DIR$/ofertas/forms.py" />
         <option value="$PROJECT_DIR$/telas/templates/telas/confirma-delete.html" />
         <option value="$PROJECT_DIR$/statics/dist/js/pages/telas/inserir.js" />
         <option value="$PROJECT_DIR$/telas/models.py" />
-        <option value="$PROJECT_DIR$/telas/forms.py" />
         <option value="$PROJECT_DIR$/produtos/templates/produtos/editar.html" />
         <option value="$PROJECT_DIR$/produtos/urls.py" />
         <option value="$PROJECT_DIR$/produtos/templates/produtos/lista.html" />
         <option value="$PROJECT_DIR$/tvs/templates/tvs/tabela2.html" />
         <option value="$PROJECT_DIR$/tvs/templates/tvs/oferta2.html" />
-        <option value="$PROJECT_DIR$/tvs/templates/tvs/video.html" />
         <option value="$PROJECT_DIR$/tvs/models.py" />
         <option value="$PROJECT_DIR$/produtos/templates/produtos/editar2.html" />
         <option value="$PROJECT_DIR$/home/templates/home.html" />
-        <option value="$PROJECT_DIR$/tvs/templates/tvs/lista.html" />
         <option value="$PROJECT_DIR$/statics/dist/js/pages/confirma_excluir.js" />
         <option value="$PROJECT_DIR$/produtos/templates/produtos/inserir.html" />
         <option value="$PROJECT_DIR$/ofertas/admin.py" />
         <option value="$PROJECT_DIR$/ofertas/templates/ofertas/confirma-delete-oferta.html" />
         <option value="$PROJECT_DIR$/telas/templates/telas/confirma-delete-tela.html" />
-        <option value="$PROJECT_DIR$/statics/assets/css/tabela.css" />
         <option value="$PROJECT_DIR$/tvs/templatetags/split.py" />
         <option value="$PROJECT_DIR$/tvs/templatetags/teste.py" />
-        <option value="$PROJECT_DIR$/tvs/templates/tvs/oferta.html" />
-        <option value="$PROJECT_DIR$/projeto/settings.py" />
-        <option value="$PROJECT_DIR$/ofertas/urls.py" />
         <option value="$PROJECT_DIR$/ofertas/models.py" />
-        <option value="$PROJECT_DIR$/produtos/models.py" />
-        <option value="$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html" />
-        <option value="$PROJECT_DIR$/tvs/views.py" />
-        <option value="$PROJECT_DIR$/tvs/templates/tvs/tabela.html" />
         <option value="$PROJECT_DIR$/telas/templates/telas/lista.html" />
-        <option value="$PROJECT_DIR$/telas/templates/telas/inserir.html" />
-        <option value="$PROJECT_DIR$/produtos/forms.py" />
-        <option value="$PROJECT_DIR$/templates/base-principal.html" />
-        <option value="$PROJECT_DIR$/telas/urls.py" />
-        <option value="$PROJECT_DIR$/telas/templates/videos/inserir.html" />
         <option value="$PROJECT_DIR$/telas/templates/videos/lista.html" />
-        <option value="$PROJECT_DIR$/telas/views.py" />
-        <option value="$PROJECT_DIR$/produtos/views.py" />
         <option value="$PROJECT_DIR$/ofertas/templates/ofertas/lista.html" />
+        <option value="$PROJECT_DIR$/ofertas/urls.py" />
+        <option value="$PROJECT_DIR$/../AdminLTE-3.0.0-alpha/AdminLTE-3/pages/examples/login.html" />
+        <option value="$PROJECT_DIR$/home/views.py" />
+        <option value="$PROJECT_DIR$/projeto/urls.py" />
+        <option value="$PROJECT_DIR$/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/statics/assets/css/tabela.css" />
+        <option value="$PROJECT_DIR$/templates/base-principal.html" />
+        <option value="$PROJECT_DIR$/tvs/templates/tvs/lista.html" />
+        <option value="$PROJECT_DIR$/produtos/forms.py" />
+        <option value="$PROJECT_DIR$/tvs/templates/tvs/video.html" />
         <option value="$PROJECT_DIR$/ofertas/templates/ofertas/inserir.html" />
+        <option value="$PROJECT_DIR$/telas/urls.py" />
+        <option value="$PROJECT_DIR$/telas/forms.py" />
+        <option value="$PROJECT_DIR$/tvs/views.py" />
+        <option value="$PROJECT_DIR$/projeto/settings.py" />
+        <option value="$PROJECT_DIR$/telas/templates/telas/inserir.html" />
+        <option value="$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html" />
+        <option value="$PROJECT_DIR$/tvs/templates/tvs/tabela.html" />
+        <option value="$PROJECT_DIR$/tvs/templates/tvs/oferta.html" />
+        <option value="$PROJECT_DIR$/telas/views.py" />
+        <option value="$PROJECT_DIR$/telas/templates/videos/inserir.html" />
+        <option value="$PROJECT_DIR$/produtos/models.py" />
         <option value="$PROJECT_DIR$/ofertas/views.py" />
+        <option value="$PROJECT_DIR$/produtos/views.py" />
       </list>
     </option>
   </component>
@@ -228,30 +329,7 @@
             <path>
               <item name="VideoWall" type="b2602c69:ProjectViewProjectNode" />
               <item name="VideoWall" type="462c0819:PsiDirectoryNode" />
-              <item name="ofertas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VideoWall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VideoWall" type="462c0819:PsiDirectoryNode" />
-              <item name="ofertas" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VideoWall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VideoWall" type="462c0819:PsiDirectoryNode" />
-              <item name="ofertas" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="ofertas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VideoWall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VideoWall" type="462c0819:PsiDirectoryNode" />
-              <item name="telas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VideoWall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VideoWall" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="produtos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,11 +394,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15773809" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1532738" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2700491" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49925596" visible="true" weight="0.24386252" />
       <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50074404" side_tool="true" weight="0.2700491" />
       <window_info anchor="bottom" id="Python Console" order="3" />
       <window_info anchor="bottom" id="SVN Repositories" order="4" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -343,74 +421,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="teste pycharm" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/statics/dist/js/pages/produtos/editar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tvs/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/templates/produtos/inserir.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="65" column="115" selection-start-line="65" selection-start-column="115" selection-end-line="65" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ofertas/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/templates/produtos/lista.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="148" column="23" lean-forward="true" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statics/dist/js/pages/confirma_excluir.js" />
-    <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/confirma-delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/confirma-delete-oferta.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <element signature="e#531#538#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/telas/templates/telas/confirma-delete-tela.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -431,38 +441,11 @@
     <entry file="file://$PROJECT_DIR$/tvs/templatetags/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/oferta2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statics/assets/css/tabela.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="174" column="16" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projeto/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/produtos/templatetags/moeda.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/oferta.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="122" selection-start-line="27" selection-start-column="122" selection-end-line="27" selection-end-column="122" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -501,16 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ofertas/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../VideoWall - Copia (2)/ofertas/templates/ofertas/inserir.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -528,16 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/telas/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ofertas/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -545,27 +508,6 @@
           <folding>
             <element signature="e#2#30#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="155" column="42" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/tabela.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -586,27 +528,41 @@
     <entry file="file://$PROJECT_DIR$/ofertas/forms.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/forms.py">
+    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/oferta2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telas/templates/videos/lista.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="1139">
+          <caret line="67" column="24" selection-start-line="57" selection-end-line="67" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/lista.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ofertas/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tvs/views.py">
+    <entry file="file://$PROJECT_DIR$/../AdminLTE-3.0.0-alpha/AdminLTE-3/pages/examples/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="84" selection-start-line="84" selection-end-line="92" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/urls.py">
+    <entry file="file://$PROJECT_DIR$/home/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -615,61 +571,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/telas/templates/telas/inserir.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="84" column="31" lean-forward="true" selection-start-line="72" selection-start-column="21" selection-end-line="84" selection-end-column="31" />
-          <folding>
-            <element signature="e#5009#5683#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/telas/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/telas/templates/videos/inserir.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base-principal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="185" column="39" selection-start-line="185" selection-start-column="39" selection-end-line="185" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="76" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/telas/templates/videos/lista.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="67" column="24" lean-forward="true" selection-start-line="57" selection-end-line="67" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/lista.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#font#0;n#span#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#font#0;n#font#0;n#span#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -677,32 +582,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/lista.html">
+    <entry file="file://$PROJECT_DIR$/templates/base-principal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        <state relative-caret-position="160">
+          <caret line="222" column="2" selection-start-line="222" selection-start-column="2" selection-end-line="222" selection-end-column="2" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="57" selection-start-column="57" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/assets/css/tabela.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/templates/produtos/editar.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/templates/produtos/lista.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2244" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/inserir.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+        <state relative-caret-position="170">
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#4395#4413#0" expanded="true" />
-            <element signature="e#4999#5017#0" expanded="true" />
-            <element signature="e#5564#5582#0" expanded="true" />
-            <element signature="e#6129#6147#0" expanded="true" />
-            <element signature="e#6694#6712#0" expanded="true" />
-            <element signature="e#7259#7277#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telas/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telas/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telas/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telas/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="e#1#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projeto/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telas/templates/videos/inserir.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/telas/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="245" selection-start-line="245" selection-end-line="260" selection-end-column="40" />
+        <state relative-caret-position="74">
+          <caret line="328" column="52" selection-start-line="328" selection-start-column="52" selection-end-line="328" selection-end-column="52" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
@@ -711,8 +724,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ofertas/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="295" column="8" selection-start-line="295" selection-start-column="8" selection-end-line="295" selection-end-column="8" />
+        <state relative-caret-position="4726">
+          <caret line="295" column="54" selection-start-line="295" selection-start-column="54" selection-end-line="295" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/lista-tabela.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/oferta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvs/templates/tvs/tabela.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telas/templates/telas/inserir.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="119" column="132" selection-start-line="119" selection-start-column="132" selection-end-line="119" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

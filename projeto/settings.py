@@ -31,7 +31,6 @@ ALLOWED_HOSTS = [
     '127.0.0.1'
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -47,8 +46,6 @@ INSTALLED_APPS = [
     'telas',
     'ofertas',
     'widget_tweaks',
-
-
 ]
 
 MIDDLEWARE = [
@@ -133,7 +130,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
@@ -142,6 +138,10 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'login'
 
 #DATE_INPUT_FORMATS = ['%d/%m/%Y']
 

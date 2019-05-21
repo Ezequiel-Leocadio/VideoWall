@@ -6,7 +6,6 @@ class TelaForm(forms.ModelForm):
         model = Tela
         fields = ["nome", "tempoexibicao", "tipo", "video"]
 
-
 class ItemTelaForm(forms.ModelForm):
     produto_id = forms.CharField(label='ID do Produto', max_length=100)
 

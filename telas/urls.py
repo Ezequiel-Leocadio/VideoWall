@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import list_tela, list_video,NovaTela, EditTela,EditVideo, NovoItemTela, DeleteItemTela, DeleteTela, NovoVideo
+from .views import list_tela, list_video, NovaTela, EditTela, EditVideo, DeleteTela, NovoVideo
 
 urlpatterns = [
     path('', list_tela, name="list_tela"),
@@ -8,8 +8,6 @@ urlpatterns = [
     path('inserir_video', NovoVideo.as_view(), name="inserir_video"),
     path('editar/<int:tela>/', EditTela.as_view(), name="editar-tela"),
     path('editar_video/<int:tela>/', EditVideo.as_view(), name="editar-video"),
-    path('inserir-item-tela/<int:tela>/', NovoItemTela.as_view(), name="inserir-item-tela"),
-    path('delete-item-tela/<int:item>/', DeleteItemTela.as_view(), name="delete-item-tela"),
     path('delet-tela', DeleteTela.as_view(), name='delete-tela')
 
 ]

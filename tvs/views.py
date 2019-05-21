@@ -16,7 +16,7 @@ def list_tv(request):
     hoje = datetime.now()
 
     context = {
-        'tvs' : tvs,
+        'tvs': tvs,
         'hoje': hoje
     }
     return render(request, 'tvs/lista.html', context)
@@ -31,11 +31,9 @@ def list_tabela(request):
     else:
         tvs = Tv.objects.all()
 
-    # Lista todas as telas excluindo as telas de ofertas com datafim menor que a data atual
+    #Lista todas as telas excluindo as telas de ofertas com datafim menor que a data atual
     telas = Tela.objects.filter(tv_id=tv).exclude(oferta_id__in=[x.idOferta for x in Oferta.objects.filter(datafim__lte=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))]).order_by('tipo','idTela')
     #ofertas = telas.filter(oferta_id__in=[x.idOferta for x in Oferta.objects.filter(datafim__gte=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))])
-
-
 
     paginator = Paginator(telas, 1)  # Lista 1  por pagina
 
@@ -65,14 +63,14 @@ def list_tabela(request):
                 data['itens_tabela2'] = pagina1.get_page(2)
 
         if tela3.tipo == '2oferta':
-
+            #Total de itens na oferta
             itensTela = tela3.oferta.intensoferta_set.count
 
-
+            #Variavel do Template para o total de itens na oferta pra fazer o calculo do plugin Caroucel
             data['totl_item_oferta'] = itensTela
 
 
-    #atualizar a data de status da tv com bese no tempo de cada tela
+    #atualizar a data de status da TV com base no tempo de cada tela
     tempotela_minutos = int(tempotela_bd[:2])
     tempotela_segundos = int(tempotela_bd[3:5])
     hoje = datetime.now()
@@ -81,10 +79,8 @@ def list_tabela(request):
     tvedit = Tv.objects.get(idTv=tv)
     tvedit.status = dt_futura
     tvedit.save()
-    #fim atualizar data status
-
+    ##Fim atualizar data status
 
     #data['itensoferta'] = telas.oferta.intensoferta_set.all()
-
 
     return render(request, 'tvs/lista-tabela.html', data)

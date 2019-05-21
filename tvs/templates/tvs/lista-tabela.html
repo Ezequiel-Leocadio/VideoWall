@@ -2,6 +2,8 @@
 <html lang="en">
 {% load static  %}
 {% load teste %}
+
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,22 +11,20 @@
 
   <title>{% block title %}Sistema de Gerenciamento de Funcionários{% endblock %}</title>
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css'%}">
-  <!-- IonIcons -->
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css'%}">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css'%}">
+<!-- IonIcons -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css'%}">
+<!-- Google Font: Source Sans Pro -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-
-
-     <link rel="stylesheet" href="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/css/docs.theme.min.css'%}">
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css'%}">
-    <link rel="stylesheet" href="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css'%}">
+<link rel="stylesheet" href="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/css/docs.theme.min.css'%}">
+<!-- Owl Stylesheets -->
+<link rel="stylesheet" href="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css'%}">
+<link rel="stylesheet" href="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css'%}">
 
 <link rel="stylesheet" href="{% static 'assets/css/tabela.css'%}">
 
@@ -39,9 +39,6 @@ body{
 
 <body >
 <div class="">
-
-
-
 
   <!-- Content Wrapper. Contains page content -->
   <div class="">
@@ -70,36 +67,28 @@ body{
 
               {%for tela in telas %}
 
-
-
                 {% if tela.tipo ==  '1tabela'%}
                      {%with itens=tela.intenstela_set.all  %}
                         {% include "tvs/tabela.html" %}
                     {%endwith%}
                 {%else%}
                     {%if tela.tipo == '2oferta'%}
-
                         {%with itensoferta=tela.oferta.intensoferta_set.all%}
                             {% include "tvs/oferta.html" %}
                         {%endwith%}
-
                     {%else%}
                         {%if tela.tipo == '3video'%}
-                          {% include "tvs/video.html" %}
+                            {% include "tvs/video.html" %}
                         {% endif%}
                     {% endif%}
                 {% endif%}
 
               <input id="tempo" type="hidden" value="{{tela.tempoexibicao}}">
 
-
               {%endfor%}
 
           </div>
           <!-- /.col-md-6 -->
-
-
-
 
         </div>
         <!-- /.row -->
@@ -107,11 +96,9 @@ body{
       <!-- /.container-fluid -->
     </div>
     <!-- /.content -->
+
   </div>
   <!-- /.content-wrapper -->
-
-
-
 
 </div>
 <!-- ./wrapper -->
@@ -131,61 +118,61 @@ body{
 <script src="{% static 'dist/js/demo.js'%}"></script>
 <script src="{% static 'dist/js/pages/dashboard3.js'%}"></script>
 
- {% block scripts %}
- <script src="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js'%}"></script>
+{% block scripts %}
+    <script src="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js'%}"></script>
     <script src="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js'%}"></script>
-  <!-- vendors -->
+    <!-- vendors -->
     <script src="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js' %}"></script>
     <script src="{% static 'plugins/OwlCarousel2-2.3.4/docs/assets/js/app.js' %}"></script>
- <script>
-    $(document).ready(function() {
+     <script>
+        $(document).ready(function() {
 
-             $(function() {
-              var tempo = 2;
-              let values = $('#tempo').val().split(':');
-              var count = parseInt(values[0] * 60) + parseInt(values[1]);
-              var pagina = {{tv_page}};
-              var tv = {{tv_tv}};
-              var total_page = {{total_page}};
-              var pagina_next = parseInt(pagina) + parseInt(1)
+                 $(function() {
+                  var tempo = 2;
+                  let values = $('#tempo').val().split(':');
+                  var count = parseInt(values[0] * 60) + parseInt(values[1]);
+                  var pagina = {{tv_page}};
+                  var tv = {{tv_tv}};
+                  var total_page = {{total_page}};
+                  var pagina_next = parseInt(pagina) + parseInt(1)
 
-              if (pagina_next > total_page){
-                pagina_next = 1;
+                  if (pagina_next > total_page){
+                    pagina_next = 1;
+                  }
+
+                  var novaURL = "{{BASE_DIR}}/tvtabela?tv="+tv+"&page="+pagina_next;
+
+                  countdown = setInterval(function(){
+                    $(window.document.location).attr('href',novaURL);
+                    //alert("teste");
+                    count--;
+                  },count * 1000)
+
+                });
+
+
+              var owl = $('.owl-carousel');
+              var itemofeta;
+
+              if ({{totl_item_oferta}} < 3){
+                itemoferta = {{totl_item_oferta}};
+              }else{
+                itemoferta = 3;
               }
 
-              var novaURL = "{{BASE_DIR}}/tvtabela?tv="+tv+"&page="+pagina_next;
+              owl.owlCarousel({
+                items: itemoferta,
+                slideBy: itemoferta,
+                autoHeight:true,
+                loop: true,
+                margin: 10,
+                stagePadding: 0,
+                autoplay: true,
+                autoplayTimeout: 5000,
+              });
 
-              countdown = setInterval(function(){
-                $(window.document.location).attr('href',novaURL);
-                //alert("teste");
-                count--;
-              },count * 1000)
-
-            });
-
-
-          var owl = $('.owl-carousel');
-          var itemofeta;
-
-          if ({{totl_item_oferta}} < 3){
-            itemoferta = {{totl_item_oferta}};
-          }else{
-            itemoferta = 3;
-          }
-
-          owl.owlCarousel({
-            items: itemoferta,
-            slideBy: itemoferta,
-            autoHeight:true,
-            loop: true,
-            margin: 10,
-            stagePadding: 0,
-            autoplay: true,
-            autoplayTimeout: 5000,
-          });
-
-    })
- </script>
+        })
+     </script>
 
 {% endblock %}
 

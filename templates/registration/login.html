@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+{% load static  %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css'%}">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="{% static 'plugins/iCheck/square/blue.css'%}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="../../index2.html"><b>Video Wall</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      {% if form.errors %}
+        <p>Usuário ou Senha Invalidos. Tente Novamente.</p>
+      {% endif %}
+
+{% if next %}
+    {% if user.is_authenticated %}
+    <p>Your account doesn't have access to this page. To proceed,
+    please login with an account that has access.</p>
+    {% else %}
+    <p>Faça Login para continuar.</p>
+    {% endif %}
+{% endif %}
+
+     <form method="post" action="{% url 'login' %}">
+          {% load widget_tweaks %}
+    {% csrf_token %}
+        <div class="form-group has-feedback">
+
+          {{ form.username.label_tag }}
+         {% render_field form.username  class+="form-control" placeholder+="Insira Um Usuário"%}
+        </div>
+        <div class="form-group has-feedback">
+
+          {{ form.password.label_tag }}
+          {% render_field form.password  class+="form-control" placeholder+="Insira Uma Senha"%}
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="checkbox icheck">
+              <label>
+
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <input type="submit" value="login" class="btn btn-primary btn-block btn-flat" >
+          <input type="hidden" name="next" value="{{ next }}">
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+{# Assumes you setup the password_reset view in your URLconf #}
+<p><!--<a href="{% url 'password_reset' %}">Lost password?</a> --></p>
+      <div class="social-auth-links text-center mb-3">
+
+      </div>
+      <!-- /.social-auth-links -->
+
+      <p class="mb-1">
+        <!--  <a href="#">I forgot my password</a> -->
+      </p>
+      <p class="mb-0">
+        <!--  <a href="register.html" class="text-center">Register a new membership</a> -->
+      </p>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="{% static 'plugins/jquery/jquery.min.js'%}"></script>
+<!-- Bootstrap 4 -->
+<script src="{% static 'plugins/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+<!-- iCheck -->
+<script src="{% static 'plugins/iCheck/icheck.min.js'%}"></script>
+
+</body>
+</html>

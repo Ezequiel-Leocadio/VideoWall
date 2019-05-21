@@ -87,8 +87,13 @@ img {
 }
 
 .product .image img {
-
+    max-width: 100%;
+    float: left;
+    max-height:100%
   /* max-width: 170px; */
+}
+.product .image {
+    padding:0;
 }
 
 .product .image .ribbon, .product .image .ribbon-primary, .product .image .ribbon-warning, .product .image .ribbon-danger, .product .image .ribbon-info, .product .image .ribbon-success {
